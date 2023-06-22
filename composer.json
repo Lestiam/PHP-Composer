@@ -1,0 +1,25 @@
+{
+    "name": "lestiam/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Igor Teles",
+            "email": "igor-t-c@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.7",
+        "symfony/dom-crawler": "^6.3",
+        "symfony/css-selector": "^6.3"
+    },
+        "autoload": {
+            "classmap": [
+                "./Teste.php"
+            ],
+            "files": ["./functions.php"],
+            "psr-4": {
+                "Alura\\BuscadorDeCursos\\": "src/"
+            }
+        }
+}
