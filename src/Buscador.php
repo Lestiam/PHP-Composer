@@ -22,7 +22,7 @@ class Buscador
         $this->crawler = $crawler;
     }
 
-    public function buscar(string $url) : array // método buscar, a partir de uma URL e vou retornar um array de cursos
+    public function buscar(string $url) : array// método buscar, a partir de uma URL e vou retornar um array de cursos
     {
         $resposta = $this->httpClient->request('GET', $url); //método que queremos e o site que queremos buscar. É a nossa requisição
         $html = $resposta->getBody();
@@ -34,7 +34,6 @@ class Buscador
         foreach ($elementosCursos as $elemento) {
             $cursos[] = $elemento->textContent; //de cada um dos elementos, eu só quero pegar o texto e este conteudo eu vou jogar pro meu array
         }
-
         return $cursos; //vai ser um array de strings
     }
 }
