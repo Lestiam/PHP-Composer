@@ -52,3 +52,8 @@
 //pois o namesSpace padrão Alura\BuscadorDeCursos\ iria ser transformado na pasta raiz "src" e é adicionado o ".php" no final
 
 
+//"scripts": {
+//        "test": "phpunit tests\\TestBuscadorDeCursos.php"
+//    } //crio um comando para o terminal de comando, ao inves de digitar vendor\bin\phpunit tests\TestBuscadorDeCursos;php, eu só digito "composer test" que o programa roda toda essa query
+
+
